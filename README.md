@@ -1,2 +1,3 @@
-# educatx
-a web application which connects tutors and students
+<h1>
+  EDUCATX
+</h1>
