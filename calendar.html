@@ -1,13 +1,89 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <title>Calendar</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="keywords"
+      content="Shivali Gulati, Educatx, Tutor, App, Learn, Courses, Khan Academy, Register, Congressional App Challenge, Kode With Klossy, California"
+    />
 
-        <link rel="manifest" href="site.webmanifest" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/stylesheet.css" />
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fimage%20(39).png?v=1572156681662"
+    />
+        <title>Tutors</title>
+         <link rel="stylesheet" href="/tutors.css" />
     </head>
-    <body></body>
+    <body>
+      <div class="topnav" id="myTopnav">
+      <a href="https://educatx.glitch.me/index.html" class="active">Educatx</a>
+      <a href = "https://educatx.glitch.me/blog.html">Blog</a>
+      <a href = "https://educatx.glitch.me/blogpost.html">Publish</a>
+      <a href="https://educatx.glitch.me/calendar.html">Calendar</a>
+      <a href="https://educatx.glitch.me/students.html">Students</a>
+      <a href="https://educatx.glitch.me/tutors.html">Tutors</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="main">
+<div id="app">
+  <br/>
+  <br/>
+           <center><h1 id = "titleoftutors">View Your Calendar</h1></center>
+            <ul>
+              <br/>
+              <br/>
+              <br/>
+                <li v-for="item in items">
+                                    <img :src="item['fields']['Upload a profile picture'][0]['thumbnails']['large']['url']" alt="" v-if="item['fields']['Upload a profile picture']" width="150">
+                  <br/>
+                  <br/>
+        <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar</title>
+		<!-- jsCalendar Javascript and CSS -->
+		<script type="text/javascript" src="jsCalendar.js"></script>
+		<link rel="stylesheet" type="text/css" href="calendar.css">
+	</head>
+	<body>
+    <center><iframe src="https://calendar.google.com/calendar/embed?height=1100&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FLos_Angeles&amp;src=ODQ3Zzk5MjVoaWg5MXVwbTI3cGN2bmdjcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;title=Educatx" style="border-width:0" width="1100" height="1100" frameborder="0" scrolling="no"></iframe></center>
+	</body>
 </html>
