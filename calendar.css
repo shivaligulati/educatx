@@ -1,0 +1,5 @@
+body {
+  background: url(../img/bg-pattern.png), #D4418E;
+  background: url(../img/bg-pattern.png),
+    linear-gradient(to left, #D4418E, #0652C5);
+}
