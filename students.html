@@ -1,0 +1,154 @@
+<html>
+    <head>
+      <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="keywords"
+      content="Shivali Gulati, Educatx, Tutor, App, Learn, Courses, Khan Academy, Register, Congressional App Challenge, Kode With Klossy, California"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fimage%20(39).png?v=1572156681662"
+    />
+        <title>Tutors</title>
+         <link rel="stylesheet" href="/tutors.css" />
+    </head>
+    <body>
+      <div class="topnav" id="myTopnav">
+      <a href="https://educatx.glitch.me/index.html" class="active">Educatx</a>
+      <a href = "https://educatx.glitch.me/blog.html">Blog</a>
+      <a href = "https://educatx.glitch.me/blogpost.html">Publish</a>
+      <a href="https://educatx.glitch.me/calendar.html">Calendar</a>
+      <a href="https://educatx.glitch.me/students.html">Students</a>
+      <a href="https://educatx.glitch.me/tutors.html">Tutors</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="main">
+<div id="app">
+  <br/>
+  <br/>
+            <h1 id = "titleoftutors">View Students To Start Learning</h1>
+           <center><p id = "titleoftutors" >Interested in becoming a students? Sign up <a href="https://educatx.glitch.me/tutorsignup.html?#">here</a> </p></center>
+            <ul>
+              <br/>
+              <br/>
+              <br/>
+                <li v-for="item in items">
+                                    <img :src="item['fields']['Upload a profile picture'][0]['thumbnails']['large']['url']" alt="" v-if="item['fields']['Upload a profile picture']" width="150">
+                  <br/>
+                  <br/>
+                    <h3>{{ item['fields']['Student Name'] }}</h3>
+                    <p><strong>Grade: </strong>{{ item['fields']['grade'] }}</p>
+                    <p><strong>Coursework: </strong>{{ item['fields']['coursework'] }}</p>
+                    <p><strong>How I learn: </strong>{{ item['fields']['How do you learn best?'] }}</p>
+                    <p><strong>What I Need: </strong>{{ item['fields']['What do you need from your tutor?'] }}</p>
+                    <p><strong>Days: </strong>{{ item['fields']['How many times do you want to be tutored a week?'] }}</p>
+                   <p><strong>Interested? Email me at </strong>{{ item['fields']['Student Email'] }}</p>
+
+              </li>
+            </ul>            
+        </div><!--app-->
+        
+        <!-- Include Dependancy Scripts -->
+        <script type="text/javascript" src="https://unpkg.com/vue"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+<script type="text/javascript">
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    items: []
+                },
+                mounted: function(){
+                   this.loadItems(); 
+                },
+                methods: {
+                    loadItems: function(){
+                        
+                        // Init variables
+                        var self = this
+                        var app_id = "appxrsEGJRMr48JdX";
+                        var app_key = "keyshueV3DkDUSrR7";
+                        this.items = []
+axios.get(
+                            "https://api.airtable.com/v0/"+app_id+"/students?view=Grid%20view",
+                            { 
+                                headers: { Authorization: "Bearer "+app_key } 
+                            }
+                        ).then(function(response){
+                            self.items = response.data.records
+                        }).catch(function(error){
+                            console.log(error)
+                        })
+                    }
+                }
+            })
+        </script>
+      <style>
+        h1 {
+            text-align: center; 
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 25%;
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            margin: 50px;
+        }
+        a {
+          color: #ffffff;
+        }
+    </style>
+          <script src="tutors.js"></script>
+      
+      </div>
+      
+    </body>
+</html>

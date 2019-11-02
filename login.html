@@ -22,21 +22,20 @@
       href="https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fimage%20(39).png?v=1572156681662"
     />
 
-
     <!-- import the webpage's javascript file -->
-    <script src="/login.js" defer></script>
+    <script src="/login.js"></script>
   </head>
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="https://educatx.glitch.me/signup.html"  target="_blank">
+        <form>
           <h1>Create Account</h1>
           <p>Click the button to register as a tutor or a student</p>
-            <button id = "yes" class="nont">Sign Up</button>
+          <button id="yes" class="nont">Sign Up</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="">
+        <form action = "studentemail()">
           <b><h1>Sign in</h1></b>
           <div class="social-container">
             <a href="#" class="social"><i class="icon-social-facebook"></i></a>
@@ -44,10 +43,10 @@
             <a href="#" class="social"><i class="icon-social-linkedin"></i></a>
           </div>
           <span>or use your account</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="username" placeholder="Email" id="email_field" />
+          <input type="password" placeholder="Password" id="passoword_field" />
           <a href="#">Forgot your password?</a>
-          <button class="nont">Sign In</button>
+          <input type = "submit" label = "signin" class="nont" id="signIn"/>
         </form>
       </div>
       <div class="overlay-container">
@@ -57,7 +56,7 @@
             <p>
               To keep connected with us please login with your personal info
             </p>
-            <button class="ghost" id="signIn">Sign In</button>
+            <button class="ghost" id="signIn2" onclick = "studentemail()">Sign In</button>
           </div>
           <div class="overlay-panel overlay-right">
             <h1>Join Educatx</h1>
@@ -67,42 +66,7 @@
         </div>
       </div>
     </div>
-    <!--     
-     <footer>
-       <ul class="list-inline">
-        <li class="list-inline-item">
-           <a class = "footerlink" href="#about">ABOUT</a>
-        </li>
-        <li class="list-inline-item">
-          <a class = "footerlink" href="#faqs">FAQS</a>
-        </li>
-        <li class="list-inline-item">
-          <a class = "footerlink" href="#features"
-                >FEATURES</a
-              >
-        </li>
-        <li class="list-inline-item">
-          <a  class = "footerlink" href="#video">VIDEO</a>
-        </li>
-        <li class="list-inline-item">
-           <a class = "footerlink" href="#contact">CONTACT</a>
-        </li>
-        <li class="list-inline-item">
-            <a class = "footerlink"
-                href="https://educatx.glitch.me/login.html?#"
-                target="_blank"
-                >LOGIN</a
-              >
-        </li>
-         <li class="list-inline-item">
-            <a class = "footerlink"
-                href="https://educatx.glitch.me/login.html?#"
-                target="_blank"
-                >SIGN UP</a
-              >
-        </li>
-      </ul>
-        <p>&copy; Educatx Website 2019. Created with ♡ by Shivali Gulati</p>
-    </footer> -->
+
+    <script src="/login.js"></script>
   </body>
 </html>
