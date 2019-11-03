@@ -1,3 +1,5 @@
+<center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fthumbnail.PNG?v=1572739808489"></center>
+
 <h1>
   EDUCATX
 </h1>
