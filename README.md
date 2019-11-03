@@ -25,5 +25,10 @@
 
 <center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub3.PNG?v=1572740107629"></center>
 
+<p> While registering, students are asked whether they would like to register as a student or a tutor.  If a user choses student, they are asked to fill out a form about their academic struggles, current coursework, and what they need from their tutor. If a user choses tutor, they are asked to fill out a form about their academic successes, teaching methods, and past tutoring experiences.  Our dynamic application then analyzes the student’s/tutor’s data and shows them a list of tutors/students who would be the best fit for them. The information presented features answers from the student’s/tutor’s application in order for the user to know which individual they should choose to work with.  Tutors who have more references are displayed first in order to connect students with more experienced tutors.  In addition to connecting students and tutors, Educatx allows students and tutors to post blog posts, such as How To Improve Your SAT Score and How To Get A 5 On The AP Computer Science Exam.  This feature allows students and tutors to learn more about their coursework and provides them with access to academic resources, like study guides, in one central location. Our final feature allows students to schedule times to tutor through a calendar which is integrated in Educatx.   This allows students and tutors  to keep track and reschedule of the days they will be tutored.  The calendar feature also allows the Educatx platform to determine the amount of community service hours tutors should be given.</p>
+
+<center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub5.PNG?v=1572740333440"></center>
+
+
 <p>© Educatx Website 2019. Created with ♡ by Shivali Gulati | Submitted for the Congressional App Challege 2019 CA17</p>
 
