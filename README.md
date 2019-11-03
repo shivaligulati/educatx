@@ -18,3 +18,9 @@
                 them with tutors for free. Tutors recieve community service
                 hours for helping their peers suceed academically.
   <p>
+
+<center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub2.PNG?v=1572740030001"></center>
+<center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub3.PNG?v=1572740107629"></center>
+
+<p>© Educatx Website 2019. Created with ♡ by Shivali Gulati | Submitted for the Congressional App Challege 2019 CA17</p>
+
