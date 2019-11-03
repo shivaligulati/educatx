@@ -20,6 +20,9 @@
   <p>
 
 <center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub2.PNG?v=1572740030001"></center>
+
+<p>As a student in public school, I was inspired to create this app after personally witnessing how my friends in regular classes frequently dropped out of honors and ap classes, due to the lack of academic support.  In comparison to many individuals on the honors and ap track, my friends could not afford $80 private tutoring sessions, SAT Prep, and struggled to find free resources online which helped them learn curriculum taught in advanced classes.   As a student who is fortunate enough to have access to a private tutor, I’ve personally seen how many of my grades increase by 10% after 4 private tutoring sessions.  This external academic enrichment should be accessible to students no matter what their income level, as all students should have access to the same educational opportunities to succeed academically.   Through Educatx, I wanted to bridge the gap between students and tutors from all over the world and allow students to not also succeed academically, but feel confident in rigorous courses.</p>
+
 <center><img src = "https://cdn.glitch.com/4d634373-ba9a-4650-ab52-95880333cafc%2Fgithub3.PNG?v=1572740107629"></center>
 
 <p>© Educatx Website 2019. Created with ♡ by Shivali Gulati | Submitted for the Congressional App Challege 2019 CA17</p>
